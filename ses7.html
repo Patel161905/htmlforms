@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        * {
+            font-family: 'Belanosima','Franklin Gothic Medium', 'Arial Narrow', Arial;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        body{
+            background-color: darksalmon;
+        }
+
+        .container {
+            border: 7px double rgb(55, 7, 75);
+            width: 500px;
+            margin: 20px auto;
+            background-color: #9AC5F4;
+            padding-left: 25px;
+        }
+
+        header {
+            margin: 10px auto;
+            padding: 10px 100px;
+            font-weight: bolder;
+            font-size: 2em;
+            color: blue;
+        }
+
+        .btn{
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(78, 145, 33);
+            font-weight: 3px;
+        }
+
+        .btn:visited {
+            color: greenyellow;
+            background-color: rgb(184, 80, 136);
+        }
+
+        .btn:active {
+            background-color: purple;
+        }
+
+        .btn {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(212, 246, 202);
+            padding: 7px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        #btn2{
+            padding: 7px;
+            font-size: 14px;
+        }
+        
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            &diams;&diams; SURVEY FORM &diams;&diams;
+        </header>
+        <form>
+            <legend style="font-size: 25px; color:darkgreen">PERSONAL INFORMATION</legend><br>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" name="Myname" id="name" placeholder="Atmaram Tukaram Bhide">
+            </div><br>
+            <div>
+                <label for="email">Email-ID: </label>
+                <input type="email" name="Mymail" id="email" placeholder="atma@yahoo.com">
+            </div><br>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" name="Mypass" id="pass">
+            </div><br>
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" name="Myage" id="age" placeholder="+ve number Eg: 26">
+            </div><br>
+            <div>
+                <label for="skills">Which option best describes your current role? </label>
+                <input type="text" id="skills" list="skills-list" required>
+                <datalist id="skills-list">
+                    <option value="Student">
+                    <option value="Industrial-Worker">
+                    <option value="Government-Employee">
+                    <option value="Private-Employee">
+                    <option value="Housewife/Houseworker">
+                </datalist>
+            </div><br>
+            <div>
+                <label for="course">How likely is that you would <strong>RECOMMEND</strong> this course to a friend?
+                    :</label> <br>
+                <input type="radio" name="Myopt" id="course">Definitely
+                <br>
+                <input type="radio" name="Myopt" id="course">Maybe
+                <br>
+                <input type="radio" name="Myopt" id="course">Not sure
+            </div><br>
+            <div>
+                <label for="most">What do you like the most in this course? </label>
+                <select name="fruits" id="fruit">
+                    <option value="hero">HTML Forms</option>
+                    <option value="success">Profile-Card</option>
+                    <option value="decons">CSS Animation</option>
+                    <option value="live">Javascript (MongoDB)</option>
+                    <option value="orange">Any other thing.</option>
+                </select><br>
+                <textarea name="other" id="other" cols="30" rows="1" placeholder="If other, then type what"></textarea>
+            </div><br>
+            <div>
+                <label for="future">Things that should be improved in the future (Check all that apply): </label><br>
+                <input type="checkbox" id="future">Front-End Projects <br>
+                <input type="checkbox" id="future">Back-End Projects <br>
+                <input type="checkbox" id="future">Data Visualization <br>
+            </div><br>
+            <div>
+                <label for="message">Suggestions : </label>
+                <br><textarea id="message" cols="60" rows="3" placeholder="Suggestions if any" required></textarea>
+            </div><br>
+                <button class="btn" type="submit"><a href="submit.html" style="text-decoration: none; color: black;">Submit</a></button>
+                <button class="btn" id="btn2" type="reset">Reset</button>
+                <br><br>
+        </form>
+    </div>
+</body>
+
+</html>
